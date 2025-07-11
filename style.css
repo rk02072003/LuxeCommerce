@@ -197,3 +197,50 @@ nav img {
     transform: translate(-20%, 20%);
   }
 }
+
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  padding: 3vw 0vw;
+}
+
+#moving-text{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-text h1{
+    font-size: 4vw;
+    display: inline-block;
+}
+
+#gola{
+    height: 30px;
+    width: 30px;
+    background-color: rgba(135, 207, 235, 0.88);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.25vw 1.5vw;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
